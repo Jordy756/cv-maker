@@ -2,7 +2,8 @@
 import '@styles/global.css';
 import { Font } from 'astro:assets';
 import { getRelativeLocaleUrl } from 'astro:i18n';
-import { getCurrentLocale, locales, useResume, useTranslations } from '@i18n/utils';
+import { getCurrentLocale, interpolate, locales, useTranslations } from '@i18n/utils';
+import { useResume } from '@i18n/resume';
 
 interface Props {
   title: string;
@@ -23,17 +24,14 @@ const alternateUrl = (locale: string) => new URL(getRelativeLocaleUrl(locale), A
 ---
 
 <!doctype html>
-<html
-  lang={currentLocale}
-  class="scrollbar-gutter-stable scrollbar-thumb-neutral-500 scrollbar-track-transparent scrollbar-thin"
->
+<html lang={currentLocale}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
-    <Font cssVariable="--font-nunito-sans" preload />
+    <Font cssVariable="--font-primary" preload />
 
     <link rel="canonical" href={url} />
     {locales.map((locale) => (
@@ -43,10 +41,10 @@ const alternateUrl = (locale: string) => new URL(getRelativeLocaleUrl(locale), A
     <meta name="description" content={description} />
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content={t('meta.name', { name })} />
+    <meta property="og:site_name" content={interpolate(t('meta.name'), { name })} />
     <meta property="og:url" content={url} />
-    <meta property="og:title" content={t('meta.title', { name })} />
-    <meta property="og:description" content={t('meta.description', { name })} />
+    <meta property="og:title" content={interpolate(t('meta.title'), { name })} />
+    <meta property="og:description" content={interpolate(t('meta.description'), { name })} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="760" />
     <meta property="og:image:height" content="430" />
@@ -54,15 +52,20 @@ const alternateUrl = (locale: string) => new URL(getRelativeLocaleUrl(locale), A
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content={url} />
-    <meta name="twitter:title" content={t('meta.title', { name })} />
-    <meta name="twitter:description" content={t('meta.description', { name })} />
+    <meta name="twitter:title" content={interpolate(t('meta.title'), { name })} />
+    <meta name="twitter:description" content={interpolate(t('meta.description'), { name })} />
     <meta name="twitter:image" content={ogImage} />
-
-    <script src="../scripts/config/lenis.ts"></script>
   </head>
-  <body class="bg-neutral-50 text-sm text-pretty text-neutral-700 overflow-x-clip print:bg-white">
-    <div class="mx-auto flex min-h-dvh w-page flex-col gap-8 p-4 md:py-12">
+  <body class="m-0 w-[612pt] bg-white text-black font-sans text-[11.33pt] leading-[1.174]">
+    <div class="p-[35.3pt_15.5pt_0_26.7pt]">
       <slot />
     </div>
   </body>
 </html>
+
+<style is:global>
+  @page {
+    size: 8.5in 14in;
+    margin: 0;
+  }
+</style>

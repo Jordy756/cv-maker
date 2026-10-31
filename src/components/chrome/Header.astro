@@ -1,0 +1,24 @@
+---
+import type { Basics } from '@lib/cv';
+
+interface Props {
+  basics: Basics;
+}
+
+const { basics } = Astro.props;
+---
+
+<header class="mb-[18pt] text-center">
+  <h1 class="text-[24pt] leading-[1.15] font-bold">{basics.name}</h1>
+  <p class="mt-[8.5pt] text-[11.33pt] leading-[1.174]">
+    <span>{basics.location}</span>
+    <span> · </span>
+    <a href={basics.portfolioUrl} class="text-[#1154cc] no-underline">
+      {basics.portfolioLabel}
+    </a>
+    <span>
+      {' '}
+      · {basics.phone} · {basics.email}
+    </span>
+  </p>
+</header>

@@ -1,0 +1,26 @@
+---
+import type { EducationEntry } from '@lib/cv';
+import { formatRange } from '@lib/cv';
+import EntryRow from '@components/ui/EntryRow.astro';
+
+interface Props {
+  entries: EducationEntry[];
+  locale: string;
+  presentLabel: string;
+}
+
+const { entries, locale, presentLabel } = Astro.props;
+---
+
+{entries.map((entry) => (
+  <article class="mt-[9.7pt] first:mt-0">
+    <EntryRow>
+      <span class="font-bold">{entry.institution}</span>
+      <span class="font-bold whitespace-nowrap">{entry.location}</span>
+    </EntryRow>
+    <EntryRow>
+      <span>{entry.area}</span>
+      <span class="italic whitespace-nowrap">{formatRange(entry.startDate, entry.endDate, locale, presentLabel)}</span>
+    </EntryRow>
+  </article>
+))}

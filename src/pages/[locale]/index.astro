@@ -1,0 +1,39 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Header from '@components/chrome/Header.astro';
+import Section from '@components/chrome/Section.astro';
+import AboutMe from '@components/sections/AboutMe.astro';
+import Experience from '@components/sections/Experience.astro';
+import Education from '@components/sections/Education.astro';
+import Skills from '@components/sections/Skills.astro';
+import { getCurrentLocale, interpolate, useTranslations } from '@i18n/utils';
+import { useResume } from '@i18n/resume';
+
+export function getStaticPaths() {
+  return [{ params: { locale: 'es' } }, { params: { locale: 'en' } }];
+}
+
+const locale = getCurrentLocale(Astro.currentLocale);
+const t = useTranslations(locale);
+const cv = useResume(locale);
+---
+
+<Layout title={interpolate(t('meta.title'), { name: cv.basics.name })} description={cv.summary}>
+  <Header basics={cv.basics} />
+
+  <Section title={t('summary.title')}>
+    <AboutMe text={cv.summary} />
+  </Section>
+
+  <Section title={t('experience.title')}>
+    <Experience entries={cv.experience} locale={cv.locale} presentLabel={t('labels.present')} />
+  </Section>
+
+  <Section title={t('education.title')}>
+    <Education entries={cv.education} locale={cv.locale} presentLabel={t('labels.present')} />
+  </Section>
+
+  <Section title={t('skills.title')}>
+    <Skills groups={cv.skills} />
+  </Section>
+</Layout>

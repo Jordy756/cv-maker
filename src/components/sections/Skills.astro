@@ -1,0 +1,17 @@
+---
+import type { SkillGroup } from '@lib/cv';
+
+interface Props {
+  groups: SkillGroup[];
+}
+
+const { groups } = Astro.props;
+---
+
+<ul class="mt-[10.4pt] mb-0 list-none pl-0 text-[11.33pt] leading-[1.16]">
+  {groups.map((group) => (
+    <li class="relative pl-[36pt] before:absolute before:left-[18pt] before:top-[-0.15pt] before:content-['\25CF'] before:font-[Liberation_Sans,Arial,Helvetica,sans-serif] before:not-italic before:font-normal">
+      <span class="font-bold">{group.category}:</span> {group.items.join(', ')}.
+    </li>
+  ))}
+</ul>

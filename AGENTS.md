@@ -8,6 +8,12 @@ astro dev --background
 
 Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
 
+## Code Style
+
+- Never write comments in any file. No inline comments, no block comments, no documentation comments. The code must speak for itself.
+- Always use arrow functions for TypeScript and JavaScript. Do not use the `function` keyword for function declarations. The only exception is when a function needs to be hoisted or requires the `function` keyword to work, such as a function expression assigned to a variable that needs its own name for recursion, or a generator. In those cases, use a named function expression.
+- Prefer Tailwind CSS v4 utilities over custom CSS. Use `@theme` for design tokens and `@utility` for custom utilities.
+
 ## Documentation
 
 Full documentation: https://docs.astro.build
