@@ -1,0 +1,146 @@
+{
+  "locale": "es",
+  "htmlLang": "es",
+  "pageTitle": "Yordi Castro Rojas — CV",
+  "pdfFileName": "Yordi_Castro_CV_ES.pdf",
+  "labels": {
+    "summary": "Perfil profesional",
+    "experience": "Experiencia profesional",
+    "education": "Educación",
+    "skills": "Habilidades técnicas",
+    "present": "Actualidad"
+  },
+  "basics": {
+    "name": "Yordi Castro Rojas",
+    "location": "Turrialba, Costa Rica",
+    "portfolioLabel": "portfolio",
+    "portfolioUrl": "https://jordy-castro-portafolio.vercel.app/es/",
+    "phone": "+506 8446 6964",
+    "email": "jordycastro1756@gmail.com"
+  },
+  "summary": "Desarrollador Full Stack con más de un año de experiencia profesional construyendo sistemas de negocio y productos digitales de punta a punta. Mi stack principal es Astro, React, Node.js y .NET/C#, con SQL para el modelado de datos. Aplico Clean Architecture, SOLID y microservicios en dominios transaccionales —finanzas, contabilidad y logística— y en experiencias de cara al usuario, convirtiendo requerimientos complejos en soluciones mantenibles y medibles.",
+  "experience": [
+    {
+      "organization": "Factor K",
+      "role": "Desarrollador Full Stack para Grupo Monge",
+      "location": "Remoto",
+      "startDate": "2026-05-05",
+      "endDate": null,
+      "highlights": [
+        "Desarrollé en .NET el motor de reconocimiento y diferimiento de comisiones, con tablas de amortización y parámetros configurables para refinanciamientos, pagos anticipados, ventas de cartera e incobrables.",
+        "Implementé en .NET la conciliación de pagos digitales, automatizando el cruce de referencias bancarias, datos de clientes y registros contables en múltiples monedas.",
+        "Construí en Blazor y .NET 10 la gestión de guías de transporte, con validación de tickets, escaneo de códigos de barras, control de estados y reportes de inconsistencias.",
+        "Diseñé e implementé en SQL Server los procesos ETL de carga mensual del Data Warehouse, con información histórica y actualizaciones automáticas para el análisis de margen, recuperación y colocación."
+      ]
+    },
+    {
+      "organization": "4Geeks",
+      "role": "Desarrollador Full Stack",
+      "location": "Remoto",
+      "startDate": "2025-07-01",
+      "endDate": "2025-12-01",
+      "highlights": [
+        "Desarrollé desde cero la primera aplicación móvil de la empresa en Flutter, migrando los servicios web existentes a una experiencia móvil multiplataforma.",
+        "Rediseñé MARKET-APP en Electron y React, convirtiendo un prototipo inicial en una herramienta de autoservicio lista para producción con soporte i18n.",
+        "Implementé un sistema de mensajería en tiempo real con Angular y Firebase, con notificaciones instantáneas y gestión de chats entre candidatos y reclutadores.",
+        "Refactoricé middlewares de backend en Python para integrar autenticación por API Key, habilitando la validación concurrente de tokens OAuth y JWT."
+      ]
+    },
+    {
+      "organization": "Lácteos El Torito",
+      "role": "Freelancer Web Developer",
+      "location": "Remoto",
+      "startDate": "2024-01-16",
+      "endDate": "2024-03-01",
+      "highlights": [
+        "Creé la primera plataforma web de la empresa con Astro, Tailwind CSS y Figma, alcanzando 95+ en Google Lighthouse en rendimiento, SEO y accesibilidad."
+      ]
+    },
+    {
+      "organization": "INTA Costa Rica",
+      "role": "Desarrollador Full Stack",
+      "location": "Remoto",
+      "startDate": "2023-08-12",
+      "endDate": "2023-12-01",
+      "highlights": [
+        "Diseñé la arquitectura y ejecuté el despliegue de un ERP en Blazor y .NET para centralizar la gestión de inventarios de múltiples bodegas a nivel nacional.",
+        "Digitalicé y automaticé la gestión de stock, sustituyendo cartas físicas y hojas de Excel por un sistema en tiempo real con SQL Server, reduciendo el tiempo de procesamiento de solicitudes en un 80%.",
+        "Construí desde Blazor un módulo de reportes automatizados para auditorías trimestrales, con exportación a PDF y Excel en un clic."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad de Costa Rica",
+      "area": "Bachillerato en Informática Empresarial",
+      "location": "Turrialba, CR",
+      "startDate": "2020-03-01",
+      "endDate": "2026-02-01"
+    },
+    {
+      "institution": "Alura Latam + Oracle",
+      "area": "Oracle Next Education",
+      "location": "En línea",
+      "startDate": "2023-04-01",
+      "endDate": "2024-02-01"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend y Móvil",
+      "items": [
+        "React",
+        "Angular",
+        "Astro",
+        "TypeScript",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Diseño Responsivo",
+        "Sistemas de Diseño",
+        "Figma",
+        "Flutter",
+        "React Native"
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        ".NET",
+        "C#",
+        "Node.js",
+        "Express",
+        "Entity Framework",
+        "Python",
+        "Java",
+        "APIs RESTful",
+        "OAuth",
+        "JWT"
+      ]
+    },
+    {
+      "category": "Bases de Datos",
+      "items": ["SQL Server", "MySQL", "MongoDB"]
+    },
+    {
+      "category": "Arquitectura y Patrones",
+      "items": [
+        "Clean Architecture",
+        "Screaming Architecture",
+        "Hexagonal Architecture",
+        "Principios SOLID",
+        "Microservicios",
+        "Domain-Driven Design"
+      ]
+    },
+    {
+      "category": "Herramientas y Metodologías",
+      "items": ["Git", "GitHub", "Scrum", "IA Generativa", "Agentes de IA", "OpenCode", "Claude Code"]
+    },
+    {
+      "category": "Idiomas",
+      "items": ["Español (Nativo)", "Inglés (B2)"]
+    }
+  ]
+}

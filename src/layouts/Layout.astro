@@ -1,0 +1,68 @@
+---
+import '@styles/global.css';
+import { Font } from 'astro:assets';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import { getCurrentLocale, locales, useResume, useTranslations } from '@i18n/utils';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const t = useTranslations(currentLocale);
+const { basics } = useResume(currentLocale);
+const { name } = basics;
+
+const url = Astro.url;
+const ogImage =
+  'https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054096/minimalist_portfolio_en_og_img_ow7ugd.webp';
+const alternateUrl = (locale: string) => new URL(getRelativeLocaleUrl(locale), Astro.site!).toString();
+---
+
+<!doctype html>
+<html
+  lang={currentLocale}
+  class="scrollbar-gutter-stable scrollbar-thumb-neutral-500 scrollbar-track-transparent scrollbar-thin"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <Font cssVariable="--font-nunito-sans" preload />
+
+    <link rel="canonical" href={url} />
+    {locales.map((locale) => (
+      <link rel="alternate" hreflang={locale} href={alternateUrl(locale)} />
+    ))}
+
+    <meta name="description" content={description} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={t('meta.name', { name })} />
+    <meta property="og:url" content={url} />
+    <meta property="og:title" content={t('meta.title', { name })} />
+    <meta property="og:description" content={t('meta.description', { name })} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="760" />
+    <meta property="og:image:height" content="430" />
+    <meta property="og:locale" content={t('meta.locale')} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={url} />
+    <meta name="twitter:title" content={t('meta.title', { name })} />
+    <meta name="twitter:description" content={t('meta.description', { name })} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <script src="../scripts/config/lenis.ts"></script>
+  </head>
+  <body class="bg-neutral-50 text-sm text-pretty text-neutral-700 overflow-x-clip print:bg-white">
+    <div class="mx-auto flex min-h-dvh w-page flex-col gap-8 p-4 md:py-12">
+      <slot />
+    </div>
+  </body>
+</html>
