@@ -19,7 +19,7 @@
     "email": "jordycastro1756@gmail.com"
   },
   "summary": "Desarrollador Full Stack con más de un año de experiencia profesional construyendo sistemas de negocio y productos digitales de punta a punta. Mi stack principal es Astro, React, Node.js y .NET/C#, con SQL para el modelado de datos. Aplico Clean Architecture, SOLID y microservicios en dominios transaccionales —finanzas, contabilidad y logística— y en experiencias de cara al usuario, convirtiendo requerimientos complejos en soluciones mantenibles y medibles.",
-  "experience": [
+  "experiences": [
     {
       "organization": "Factor K",
       "role": "Desarrollador Full Stack para Grupo Monge",
@@ -69,7 +69,7 @@
       ]
     }
   ],
-  "education": [
+  "educations": [
     {
       "institution": "Universidad de Costa Rica",
       "area": "Bachillerato en Informática Empresarial",

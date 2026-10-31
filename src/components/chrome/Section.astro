@@ -6,11 +6,11 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<section class="mt-[13.8pt] mb-0">
-  <header>
-    <h2 class="mb-[10.08pt] text-[12pt] leading-[1.174] font-bold tracking-normal uppercase">{title}</h2>
+<section class="flex flex-col gap-2">
+  <header class="border px-2">
+    <h2 class="text-base uppercase">{title}</h2>
   </header>
-  <div>
+  <div class="flex flex-col gap-2 border">
     <slot />
   </div>
 </section>

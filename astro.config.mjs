@@ -18,7 +18,7 @@ export default defineConfig({
       provider: fontProviders.fontsource(),
       name: 'STIX Two Text',
       cssVariable: '--font-primary',
-      weights: [400, 700],
+      weights: [400, 700, 900],
       styles: ['normal', 'italic'],
       subsets: ['latin', 'latin-ext'],
       fallbacks: ['serif'],

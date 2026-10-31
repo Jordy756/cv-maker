@@ -12,13 +12,13 @@ pdf/Yordi_Castro_CV_EN.pdf
 
 ## Stack
 
-| Piece             | Choice                                                    |
-| :---------------- | :-------------------------------------------------------- |
-| Framework         | Astro 7 (static output, i18n routing)                     |
-| Styling           | Tailwind CSS v4 through `@tailwindcss/vite`                |
-| Typography        | STIX Two Text, downloaded at build time by Astro Fonts API |
-| PDF               | Playwright (Chromium)                                     |
-| Content           | `src/data/{es,en}.json`                                   |
+| Piece      | Choice                                                     |
+| :--------- | :--------------------------------------------------------- |
+| Framework  | Astro 7 (static output, i18n routing)                      |
+| Styling    | Tailwind CSS v4 through `@tailwindcss/vite`                |
+| Typography | STIX Two Text, downloaded at build time by Astro Fonts API |
+| PDF        | Playwright (Chromium)                                      |
+| Content    | `src/data/{es,en}.json`                                    |
 
 ## Requirements
 
@@ -33,14 +33,14 @@ pnpm exec playwright install chromium
 
 ## Commands
 
-| Command           | Action                                                |
-| :---------------- | :---------------------------------------------------- |
-| `pnpm dev`        | Dev server with a live preview of the page            |
-| `pnpm check`      | Type-check the Astro components                       |
-| `pnpm build`      | Type-check, then build the static pages into `dist/`  |
-| `pnpm pdf`        | Build, render both PDFs, then verify them             |
-| `pnpm pdf:verify` | Verify the existing PDFs only                         |
-| `pnpm format`     | Format the repository with Prettier                   |
+| Command           | Action                                               |
+| :---------------- | :--------------------------------------------------- |
+| `pnpm dev`        | Dev server with a live preview of the page           |
+| `pnpm check`      | Type-check the Astro components                      |
+| `pnpm build`      | Type-check, then build the static pages into `dist/` |
+| `pnpm pdf`        | Build, render both PDFs, then verify them            |
+| `pnpm pdf:verify` | Verify the existing PDFs only                        |
+| `pnpm format`     | Format the repository with Prettier                  |
 
 `node scripts/pdf.ts --no-verify` renders without running the checks.
 
@@ -97,8 +97,7 @@ export const useTranslations = (lang: keyof typeof ui) => {
   };
 };
 
-export const getCurrentLocale = (locale: string | undefined): Locale =>
-  (locale ?? defaultLocale) as Locale;
+export const getCurrentLocale = (locale: string | undefined): Locale => (locale ?? defaultLocale) as Locale;
 ```
 
 ## Typography

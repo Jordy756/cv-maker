@@ -8,7 +8,6 @@
       "@data/*": ["./src/data/*"],
       "@i18n/*": ["./src/i18n/*"],
       "@layouts/*": ["./src/layouts/*"],
-      "@lib/*": ["./src/lib/*"],
       "@scripts/*": ["./src/scripts/*"],
       "@styles/*": ["./src/styles/*"]
     }

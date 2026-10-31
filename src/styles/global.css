@@ -1,6 +1,21 @@
 @import 'tailwindcss';
 
-@theme inline {
+@theme {
   --font-sans: var(--font-primary);
-  --font-serif: var(--font-primary);
+  --font-mono: var(--font-primary);
+}
+
+@layer base {
+  :root {
+    interpolate-size: allow-keywords;
+  }
+
+  :is(h1, h2, h3, h4, h5, h6) {
+    font-weight: var(--font-weight-black);
+    text-wrap: balance;
+  }
+
+  :is(button, a) {
+    cursor: pointer;
+  }
 }

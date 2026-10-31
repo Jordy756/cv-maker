@@ -1,24 +1,28 @@
 ---
-import type { Basics } from '@lib/cv';
+import { getCurrentLocale, useResume } from '@i18n/utils';
 
-interface Props {
-  basics: Basics;
-}
+const locale = getCurrentLocale(Astro.currentLocale);
+const { basics, summary } = useResume(locale);
 
-const { basics } = Astro.props;
+const { name, location, portfolioLabel, portfolioUrl, phone, email } = basics;
 ---
 
-<header class="mb-[18pt] text-center">
-  <h1 class="text-[24pt] leading-[1.15] font-bold">{basics.name}</h1>
-  <p class="mt-[8.5pt] text-[11.33pt] leading-[1.174]">
-    <span>{basics.location}</span>
-    <span> · </span>
-    <a href={basics.portfolioUrl} class="text-[#1154cc] no-underline">
-      {basics.portfolioLabel}
-    </a>
-    <span>
-      {' '}
-      · {basics.phone} · {basics.email}
-    </span>
-  </p>
+<header class="border">
+  <div class="text-center border-b flex flex-col gap-1 px-2">
+    <h1 class="text-4xl">{name}</h1>
+    <p class="">
+      <span>{location}</span>
+      <span> · </span>
+      <a href={portfolioUrl} class="text-blue-700 underline">
+        {portfolioLabel}
+      </a>
+      <span>
+        {' '}
+        · {phone} · {email}
+      </span>
+    </p>
+  </div>
+  <article class="px-2 pt-2">
+    <p class="italic">{summary}</p>
+  </article>
 </header>
