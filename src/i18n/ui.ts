@@ -20,15 +20,13 @@ const meta = {
 
 const sections = {
   en: {
-    'summary.title': 'Professional summary',
-    'experience.title': 'Professional experience',
+    'experience.title': 'Experience',
     'education.title': 'Education',
     'certifications.title': 'Certifications',
     'skills.title': 'Technical skills',
   },
   es: {
-    'summary.title': 'Perfil profesional',
-    'experience.title': 'Experiencia profesional',
+    'experience.title': 'Experiencia',
     'education.title': 'Educación',
     'certifications.title': 'Certificaciones',
     'skills.title': 'Habilidades técnicas',
