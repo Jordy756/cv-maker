@@ -1,4 +1,4 @@
-import { content, ui } from './ui.ts';
+import { content, ui } from '@i18n/ui.ts';
 
 export const locales = ['es', 'en'] as const;
 

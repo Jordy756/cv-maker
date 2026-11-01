@@ -1,5 +1,5 @@
-import en from '../data/en.json' with { type: 'json' };
-import es from '../data/es.json' with { type: 'json' };
+import en from '@data/en.json' with { type: 'json' };
+import es from '@data/es.json' with { type: 'json' };
 
 const meta = {
   en: {
