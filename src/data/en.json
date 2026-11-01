@@ -27,10 +27,10 @@
       "startDate": "2026-05-05",
       "endDate": null,
       "highlights": [
-        "Developed the commission recognition and deferral engine in .NET, with amortization schedules and configurable parameters for refinancing, early payments, portfolio sales, and bad debt.",
-        "Implemented digital payment reconciliation in .NET, automating the matching of bank references, customer data, and accounting records across multiple currencies.",
-        "Delivered transport guide management in Blazor and .NET 10, covering ticket validation, barcode scanning, status tracking, and exception reports.",
-        "Designed and implemented the monthly ETL load processes for the financial Data Warehouse in SQL Server, with historical data and automated refreshes feeding margin, recovery, and placement analysis."
+        "Implement digital payment reconciliation in .NET, using SQL Server to match bank references, customer data, and accounting records for thousands of payments across 2 currencies (CRC and USD), automating the manual compensation.",
+        "Developed the commission recognition and deferral engine in .NET, using SQL Server for storage and amortization schedules with configurable parameters for refinancing, early payments, portfolio sales, and bad debt.",
+        "Built the transport guide management system in Blazor and .NET 10, with ticket validation, barcode scanning, status control, and inconsistency reports, improving productivity by 20%.",
+        "Designed and implemented the monthly ETL load processes for the Data Warehouse in SQL Server, loading millions of records, centralizing the data in one table per process and indexing the queries to eliminate wait times."
       ]
     },
     {
@@ -40,10 +40,10 @@
       "startDate": "2025-07-01",
       "endDate": "2025-12-01",
       "highlights": [
-        "Launched the company's first mobile application from scratch in Flutter, migrating existing web services into a cross-platform mobile experience.",
+        "Built the company's first mobile application from scratch in Flutter, migrating existing web services to a cross-platform mobile experience and keeping those services reachable from mobile.",
         "Redesigned MARKET-APP in Electron and React, turning an early prototype into a production-ready self-service tool with i18n support.",
-        "Implemented real-time messaging with Angular and Firebase, adding instant notifications and chat management between candidates and recruiters.",
-        "Refactored Python backend middlewares to integrate API Key authentication, enabling concurrent validation of OAuth and JWT tokens."
+        "Implemented a real-time messaging system with Angular and Firebase, with instant notifications and chat management between candidates and recruiters, removing email-based coordination.",
+        "Refactored Python backend middlewares to integrate API Key authentication, enabling concurrent validation of OAuth and JWT tokens across roughly 25 endpoints."
       ]
     },
     {
@@ -53,7 +53,7 @@
       "startDate": "2024-01-16",
       "endDate": "2024-03-01",
       "highlights": [
-        "Created the company's first website with Astro, Tailwind CSS, and Figma, scoring 95+ on Google Lighthouse for performance, SEO, and accessibility."
+        "Created the company's first website with Astro, Tailwind CSS, and Figma, achieving 95+ on all three Google Lighthouse scores: performance, SEO, and accessibility."
       ]
     },
     {
@@ -63,9 +63,9 @@
       "startDate": "2023-08-12",
       "endDate": "2023-12-01",
       "highlights": [
-        "Designed the architecture and deployment of an ERP in Blazor and .NET to centralize inventory management across multiple warehouses nationwide.",
+        "Designed and implemented an ERP in Blazor and .NET to centralize inventory management across multiple warehouses nationwide, also executing its deployment.",
         "Digitized and automated stock management, replacing physical forms and Excel sheets with a real-time SQL Server system that cut request processing time by 80%.",
-        "Automated quarterly audit reporting in Blazor, generating PDF and Excel files in one click."
+        "Built an automated reporting module in Blazor for quarterly audits, eliminating manual consolidation and enabling PDF and Excel export in one click."
       ]
     }
   ],
@@ -98,78 +98,54 @@
       "url": "https://verify.skilljar.com/c/2zabojceq7p9"
     },
     {
-      "name": "Introduction to Agent Skills",
+      "name": "Introduction to agent skills",
       "issuer": "Anthropic Education",
       "date": "2026-05-20",
       "url": "https://verify.skilljar.com/c/fi8kduek4v34"
     },
     {
-      "name": "Oracle Next Education",
-      "issuer": "Oracle + Alura Latam",
-      "date": "2024-02-12",
-      "url": "https://app.aluracursos.com/user/jordycastro1756/fullCertificate/fb6c4059144a90dd07315ca00c5512cb"
+      "name": "Desarrollo con IA: de 0 a Producción",
+      "issuer": "BIG school",
+      "date": "2026-03-14",
+      "url": "https://res.cloudinary.com/dd3hdnfqi/image/upload/v1773963091/Certificado-Yordi-Castro-Rojas_md7vg4.webp"
     },
     {
       "name": "Scrum Fundamentals Certified (SFC)",
       "issuer": "SCRUMstudy",
       "date": "2023-10-31",
       "url": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1003121"
+    },
+    {
+      "name": "Oracle Next Education",
+      "issuer": "Oracle + Alura Latam",
+      "date": "2024-02-12",
+      "url": "https://app.aluracursos.com/user/jordycastro1756/fullCertificate/fb6c4059144a90dd07315ca00c5512cb"
     }
   ],
   "skills": [
     {
       "category": "Frontend & Mobile",
-      "items": [
-        "React",
-        "Angular",
-        "Astro",
-        "TypeScript",
-        "JavaScript",
-        "HTML5",
-        "CSS3",
-        "Tailwind CSS",
-        "Responsive Design",
-        "Design Systems",
-        "Figma",
-        "Flutter",
-        "React Native"
-      ]
+      "items": [ "React", "Angular", "Astro", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Responsive Design", "Design Systems", "Figma", "Flutter", "React Native" ]
     },
     {
       "category": "Backend",
-      "items": [
-        ".NET",
-        "Node.js",
-        "Express",
-        "Entity Framework",
-        "Python",
-        "Java",
-        "RESTful APIs",
-        "OAuth",
-        "JWT"
-      ]
+      "items": [ ".NET", "Node.js", "Express", "Entity Framework", "Python", "Java", "RESTful APIs", "OAuth", "JWT" ]
     },
     {
       "category": "Databases",
-      "items": ["SQL Server", "MySQL", "MongoDB"]
+      "items": [ "SQL Server", "MySQL", "MongoDB" ]
     },
     {
       "category": "Architecture & Patterns",
-      "items": [
-        "Clean Architecture",
-        "Screaming Architecture",
-        "Hexagonal Architecture",
-        "SOLID Principles",
-        "Microservices"
-      ]
+      "items": [ "Clean Architecture", "Screaming Architecture", "Hexagonal Architecture", "SOLID Principles", "Microservices" ]
     },
     {
       "category": "Tools & Methodologies",
-      "items": ["Git", "GitHub", "Scrum", "Generative AI", "AI Agents", "OpenCode", "Claude Code"]
+      "items": [ "Git", "GitHub", "Scrum", "Generative AI", "AI Agents", "OpenCode", "Claude Code" ]
     },
     {
       "category": "Languages",
-      "items": ["Spanish (Native)", "English (B2)"]
+      "items": [ "Spanish (Native)", "English (B2)" ]
     }
   ]
 }

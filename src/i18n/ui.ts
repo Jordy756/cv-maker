@@ -38,7 +38,7 @@ const labels = {
     'labels.present': 'Present',
   },
   es: {
-    'labels.present': 'Actualidad',
+    'labels.present': 'Presente',
   },
 } as const;
 

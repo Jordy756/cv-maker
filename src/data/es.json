@@ -8,7 +8,7 @@
     "experience": "Experiencia",
     "education": "Educación",
     "skills": "Habilidades técnicas",
-    "present": "Actualidad"
+    "present": "Presente"
   },
   "basics": {
     "name": "Yordi Castro Rojas",
@@ -27,10 +27,10 @@
       "startDate": "2026-05-05",
       "endDate": null,
       "highlights": [
-        "Desarrollé en .NET el motor de reconocimiento y diferimiento de comisiones, con tablas de amortización y parámetros configurables para refinanciamientos, pagos anticipados, ventas de cartera e incobrables.",
-        "Implementé en .NET la conciliación de pagos digitales, automatizando el cruce de referencias bancarias, datos de clientes y registros contables en múltiples monedas.",
-        "Construí en Blazor y .NET 10 la gestión de guías de transporte, con validación de tickets, escaneo de códigos de barras, control de estados y reportes de inconsistencias.",
-        "Diseñé e implementé en SQL Server los procesos ETL de carga mensual del Data Warehouse, con información histórica y actualizaciones automáticas para el análisis de margen, recuperación y colocación."
+        "Implemento en .NET la conciliación de pagos digitales, con SQL Server para el cruce de referencias bancarias, datos de clientes y registros contables de miles de pagos en 2 monedas (CRC y USD), automatizando la compensación manual.",
+        "Desarrollé en .NET el motor de reconocimiento y diferimiento de comisiones, con SQL Server para el almacenamiento y tablas de amortización y parámetros configurables para refinanciamientos, pagos anticipados, ventas de cartera e incobrables.",
+        "Construí en Blazor y .NET 10 la gestión de guías de transporte, con validación de tickets, escaneo de códigos de barras, control de estados y reportes de inconsistencias, mejorando la productividad en un 20%.",
+        "Diseñé e implementé en SQL Server los procesos ETL de carga mensual del Data Warehouse, cargando millones de registros, centralizando la data en una tabla por proceso e indexando las consultas para eliminar los tiempos de espera."
       ]
     },
     {
@@ -40,10 +40,10 @@
       "startDate": "2025-07-01",
       "endDate": "2025-12-01",
       "highlights": [
-        "Desarrollé desde cero la primera aplicación móvil de la empresa en Flutter, migrando los servicios web existentes a una experiencia móvil multiplataforma.",
+        "Construí desde cero la primera aplicación móvil de la empresa en Flutter, migrando los servicios web existentes a una experiencia móvil multiplataforma y dejando los servicios disponibles en el móvil.",
         "Rediseñé MARKET-APP en Electron y React, convirtiendo un prototipo inicial en una herramienta de autoservicio lista para producción con soporte i18n.",
-        "Implementé un sistema de mensajería en tiempo real con Angular y Firebase, con notificaciones instantáneas y gestión de chats entre candidatos y reclutadores.",
-        "Refactoricé middlewares de backend en Python para integrar autenticación por API Key, habilitando la validación concurrente de tokens OAuth y JWT."
+        "Implementé un sistema de mensajería en tiempo real con Angular y Firebase, con notificaciones instantáneas y gestión de chats entre candidatos y reclutadores, eliminando la coordinación por correo.",
+        "Refactoricé middlewares de backend en Python para integrar autenticación por API Key, habilitando la validación concurrente de tokens OAuth y JWT en unos 25 endpoints."
       ]
     },
     {
@@ -53,7 +53,7 @@
       "startDate": "2024-01-16",
       "endDate": "2024-03-01",
       "highlights": [
-        "Creé la primera plataforma web de la empresa con Astro, Tailwind CSS y Figma, alcanzando 95+ en Google Lighthouse en rendimiento, SEO y accesibilidad."
+        "Creé el primer sitio web de la empresa con Astro, Tailwind CSS y Figma, alcanzando 95+ en las tres puntuaciones de Google Lighthouse: rendimiento, SEO y accesibilidad."
       ]
     },
     {
@@ -63,9 +63,9 @@
       "startDate": "2023-08-12",
       "endDate": "2023-12-01",
       "highlights": [
-        "Diseñé la arquitectura y ejecuté el despliegue de un ERP en Blazor y .NET para centralizar la gestión de inventarios de múltiples bodegas a nivel nacional.",
+        "Diseñé e implementé un ERP en Blazor y .NET para centralizar la gestión de inventarios de múltiples bodegas a nivel nacional, ejecutando también su despliegue.",
         "Digitalicé y automaticé la gestión de stock, sustituyendo cartas físicas y hojas de Excel por un sistema en tiempo real con SQL Server, reduciendo el tiempo de procesamiento de solicitudes en un 80%.",
-        "Construí desde Blazor un módulo de reportes automatizados para auditorías trimestrales, con exportación a PDF y Excel en un clic."
+        "Construí desde Blazor un módulo de reportes automatizados para auditorías trimestrales, eliminando la consolidación manual y permitiendo la exportación a PDF y Excel en un clic."
       ]
     }
   ],
@@ -98,78 +98,54 @@
       "url": "https://verify.skilljar.com/c/2zabojceq7p9"
     },
     {
-      "name": "Introduction to Agent Skills",
+      "name": "Introduction to agent skills",
       "issuer": "Anthropic Education",
       "date": "2026-05-20",
       "url": "https://verify.skilljar.com/c/fi8kduek4v34"
     },
     {
-      "name": "Oracle Next Education",
-      "issuer": "Oracle + Alura Latam",
-      "date": "2024-02-12",
-      "url": "https://app.aluracursos.com/user/jordycastro1756/fullCertificate/fb6c4059144a90dd07315ca00c5512cb"
+      "name": "Desarrollo con IA: de 0 a Producción",
+      "issuer": "BIG school",
+      "date": "2026-03-14",
+      "url": "https://res.cloudinary.com/dd3hdnfqi/image/upload/v1773963091/Certificado-Yordi-Castro-Rojas_md7vg4.webp"
     },
     {
       "name": "Scrum Fundamentals Certified (SFC)",
       "issuer": "SCRUMstudy",
       "date": "2023-10-31",
       "url": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1003121"
+    },
+    {
+      "name": "Oracle Next Education",
+      "issuer": "Oracle + Alura Latam",
+      "date": "2024-02-12",
+      "url": "https://app.aluracursos.com/user/jordycastro1756/fullCertificate/fb6c4059144a90dd07315ca00c5512cb"
     }
   ],
   "skills": [
     {
       "category": "Frontend y Móvil",
-      "items": [
-        "React",
-        "Angular",
-        "Astro",
-        "TypeScript",
-        "JavaScript",
-        "HTML5",
-        "CSS3",
-        "Tailwind CSS",
-        "Diseño Responsivo",
-        "Sistemas de Diseño",
-        "Figma",
-        "Flutter",
-        "React Native"
-      ]
+      "items": [ "React", "Angular", "Astro", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Diseño Responsivo", "Sistemas de Diseño", "Figma", "Flutter", "React Native" ]
     },
     {
       "category": "Backend",
-      "items": [
-        ".NET",
-        "Node.js",
-        "Express",
-        "Entity Framework",
-        "Python",
-        "Java",
-        "APIs RESTful",
-        "OAuth",
-        "JWT"
-      ]
+      "items": [ ".NET", "Node.js", "Express", "Entity Framework", "Python", "Java", "APIs RESTful", "OAuth", "JWT" ]
     },
     {
       "category": "Bases de Datos",
-      "items": ["SQL Server", "MySQL", "MongoDB"]
+      "items": [ "SQL Server", "MySQL", "MongoDB" ]
     },
     {
       "category": "Arquitectura y Patrones",
-      "items": [
-        "Clean Architecture",
-        "Screaming Architecture",
-        "Hexagonal Architecture",
-        "Principios SOLID",
-        "Microservicios"
-      ]
+      "items": [ "Clean Architecture", "Screaming Architecture", "Hexagonal Architecture", "Principios SOLID", "Microservicios" ]
     },
     {
       "category": "Herramientas y Metodologías",
-      "items": ["Git", "GitHub", "Scrum", "IA Generativa", "Agentes de IA", "OpenCode", "Claude Code"]
+      "items": [ "Git", "GitHub", "Scrum", "IA Generativa", "Agentes de IA", "OpenCode", "Claude Code" ]
     },
     {
       "category": "Idiomas",
-      "items": ["Español (Nativo)", "Inglés (B2)"]
+      "items": [ "Español (Nativo)", "Inglés (B2)" ]
     }
   ]
 }
