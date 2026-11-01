@@ -18,7 +18,7 @@
     "phone": "+506 8446 6964",
     "email": "jordycastro1756@gmail.com"
   },
-  "summary": "Full Stack Developer with over a year of professional experience building business systems and digital products end to end. My core stack is Astro, React, Node.js, and .NET/C#, with SQL for data modeling. I apply Clean Architecture, SOLID, and microservices across transactional domains — finance, accounting, and logistics — as well as user-facing experiences, turning complex requirements into maintainable, measurable solutions.",
+  "summary": "Full Stack Developer with over a year of professional experience building business systems and digital products end to end. My core stack is Astro, React, Node.js, and .NET, with SQL for data modeling. I apply Clean Architecture, SOLID, and microservices across transactional domains — finance, accounting, and logistics — as well as user-facing experiences, turning complex requirements into maintainable, measurable solutions.",
   "experiences": [
     {
       "organization": "Factor K",
@@ -139,7 +139,6 @@
       "category": "Backend",
       "items": [
         ".NET",
-        "C#",
         "Node.js",
         "Express",
         "Entity Framework",
@@ -161,8 +160,7 @@
         "Screaming Architecture",
         "Hexagonal Architecture",
         "SOLID Principles",
-        "Microservices",
-        "Domain-Driven Design"
+        "Microservices"
       ]
     },
     {

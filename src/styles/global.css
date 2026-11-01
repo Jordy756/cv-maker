@@ -1,8 +1,17 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: var(--font-primary);
-  --font-mono: var(--font-primary);
+  --font-sans: var(--font-stix-two-text), Calibri, system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-stix-two-text), Calibri, system-ui, -apple-system, sans-serif;
+
+  --text-base: 10pt;
+  --text-base--line-height: 1.25;
+
+  /*--font-sans: var(--font-carlito), Calibri, system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-carlito), Calibri, system-ui, -apple-system, sans-serif;
+
+  --text-base: 11pt;
+  --text-base--line-height: 1.15;*/
 }
 
 @layer base {
