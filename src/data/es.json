@@ -76,13 +76,44 @@
       "location": "Turrialba, CR",
       "startDate": "2020-03-01",
       "endDate": "2026-02-01"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Claude Code in Action",
+      "issuer": "Anthropic Education",
+      "date": "2026-06-15",
+      "url": "https://verify.skilljar.com/c/zx9tdpi6msm4"
     },
     {
-      "institution": "Alura Latam + Oracle",
-      "area": "Oracle Next Education",
-      "location": "En línea",
-      "startDate": "2023-04-01",
-      "endDate": "2024-02-01"
+      "name": "Building with the Claude API",
+      "issuer": "Anthropic Education",
+      "date": "2026-06-15",
+      "url": "https://verify.skilljar.com/c/pfh4ybgoh8k5"
+    },
+    {
+      "name": "Introduction to Model Context Protocol",
+      "issuer": "Anthropic Education",
+      "date": "2026-06-14",
+      "url": "https://verify.skilljar.com/c/2zabojceq7p9"
+    },
+    {
+      "name": "Introduction to Agent Skills",
+      "issuer": "Anthropic Education",
+      "date": "2026-05-20",
+      "url": "https://verify.skilljar.com/c/fi8kduek4v34"
+    },
+    {
+      "name": "Oracle Next Education",
+      "issuer": "Oracle + Alura Latam",
+      "date": "2024-02-12",
+      "url": "https://app.aluracursos.com/user/jordycastro1756/fullCertificate/fb6c4059144a90dd07315ca00c5512cb"
+    },
+    {
+      "name": "Scrum Fundamentals Certified (SFC)",
+      "issuer": "SCRUMstudy",
+      "date": "2023-10-31",
+      "url": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1003121"
     }
   ],
   "skills": [

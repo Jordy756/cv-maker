@@ -1,0 +1,26 @@
+---
+import { formatMonth } from '@scripts/utils/dates';
+import Section from '@components/chrome/Section.astro';
+import { getCurrentLocale, useTranslations, useResume } from '@i18n/utils';
+
+const locale = getCurrentLocale(Astro.currentLocale);
+const t = useTranslations(locale);
+const { certifications } = useResume(locale);
+---
+
+<Section title={t('certifications.title')}>
+  <ul class="flex flex-col">
+    {certifications.map(({ name, issuer, date, url }) => (
+      <li class="flex items-center justify-between gap-4">
+        <span>
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            {name}
+          </a>
+          {' — '}
+          {issuer}
+        </span>
+        <span class="whitespace-nowrap">{formatMonth(date, locale)}</span>
+      </li>
+    ))}
+  </ul>
+</Section>

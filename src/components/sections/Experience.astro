@@ -10,7 +10,7 @@ const { experiences } = useResume(locale);
 
 <Section title={t('experience.title')}>
   {experiences.map(({ organization, role, location, startDate, endDate, highlights }) => (
-    <article class="px-2 flex flex-col gap-0.5">
+    <article class="flex flex-col gap-0.5">
       <header class="flex items-start gap-4 justify-between">
         <div class="flex flex-col">
           <h3>{organization}</h3>
@@ -18,7 +18,7 @@ const { experiences } = useResume(locale);
         </div>
         <div class="flex flex-col items-end">
           <span class="whitespace-nowrap">{location}</span>
-          <span class="italic whitespace-nowrap">{formatRange(startDate, endDate, locale, t('labels.present'))}</span>
+          <span class="whitespace-nowrap">{formatRange(startDate, endDate, locale, t('labels.present'))}</span>
         </div>
       </header>
       <ul class="flex flex-col ml-12">

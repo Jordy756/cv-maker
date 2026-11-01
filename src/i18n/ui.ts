@@ -23,12 +23,14 @@ const sections = {
     'summary.title': 'Professional summary',
     'experience.title': 'Professional experience',
     'education.title': 'Education',
+    'certifications.title': 'Certifications',
     'skills.title': 'Technical skills',
   },
   es: {
     'summary.title': 'Perfil profesional',
     'experience.title': 'Experiencia profesional',
     'education.title': 'Educación',
+    'certifications.title': 'Certificaciones',
     'skills.title': 'Habilidades técnicas',
   },
 } as const;

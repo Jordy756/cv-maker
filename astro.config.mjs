@@ -18,7 +18,7 @@ export default defineConfig({
   },
   fonts: [
     {
-      provider: fontProviders.fontsource(),
+      provider: fontProviders.google(),
       name: 'STIX Two Text',
       cssVariable: '--font-primary',
       weights: [400, 700],
@@ -26,6 +26,15 @@ export default defineConfig({
       subsets: ['latin', 'latin-ext'],
       fallbacks: ['serif'],
     },
+    // {
+    //   provider: fontProviders.fontsource(),
+    //   name: 'Carlito',
+    //   cssVariable: '--font-primary',
+    //   weights: [400, 700],
+    //   styles: ['normal', 'italic'],
+    //   subsets: ['latin'],
+    //   fallbacks: ['Calibri', 'sans-serif'],
+    // },
   ],
   vite: {
     plugins: [tailwindcss()],

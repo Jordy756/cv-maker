@@ -3,6 +3,7 @@ import Layout from '@layouts/Layout.astro';
 import Header from '@components/chrome/Header.astro';
 import Experience from '@components/sections/Experience.astro';
 import Education from '@components/sections/Education.astro';
+import Certifications from '@components/sections/Certifications.astro';
 import Skills from '@components/sections/Skills.astro';
 import { getCurrentLocale, interpolate, useTranslations, useResume } from '@i18n/utils';
 
@@ -20,6 +21,7 @@ const { basics, summary } = useResume(locale);
   <main class="flex flex-col gap-4">
     <Education />
     <Experience />
+    <Certifications />
     <Skills />
   </main>
 </Layout>
