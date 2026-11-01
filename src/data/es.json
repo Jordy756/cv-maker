@@ -104,10 +104,10 @@
       "url": "https://verify.skilljar.com/c/fi8kduek4v34"
     },
     {
-      "name": "Desarrollo con IA: de 0 a Producción",
-      "issuer": "BIG school",
-      "date": "2026-03-14",
-      "url": "https://res.cloudinary.com/dd3hdnfqi/image/upload/v1773963091/Certificado-Yordi-Castro-Rojas_md7vg4.webp"
+      "name": "Building AI Agents with n8n",
+      "issuer": "LinkedIn Learning",
+      "date": "2026-03-10",
+      "url": "https://www.linkedin.com/learning/certificates/400042e01ae5214fc9c9698d009c7c7ae55f31297785670df979e779cd5158e6"
     },
     {
       "name": "Scrum Fundamentals Certified (SFC)",
@@ -125,27 +125,47 @@
   "skills": [
     {
       "category": "Frontend y Móvil",
-      "items": [ "React", "Angular", "Astro", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Diseño Responsivo", "Sistemas de Diseño", "Figma", "Flutter", "React Native" ]
+      "items": [
+        "React",
+        "Angular",
+        "Astro",
+        "TypeScript",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Diseño Responsivo",
+        "Sistemas de Diseño",
+        "Figma",
+        "Flutter",
+        "React Native"
+      ]
     },
     {
       "category": "Backend",
-      "items": [ ".NET", "Node.js", "Express", "Entity Framework", "Python", "Java", "APIs RESTful", "OAuth", "JWT" ]
+      "items": [".NET", "Node.js", "Express", "Entity Framework", "Python", "Java", "APIs RESTful", "OAuth", "JWT"]
     },
     {
       "category": "Bases de Datos",
-      "items": [ "SQL Server", "MySQL", "MongoDB" ]
+      "items": ["SQL Server", "MySQL", "MongoDB"]
     },
     {
       "category": "Arquitectura y Patrones",
-      "items": [ "Clean Architecture", "Screaming Architecture", "Hexagonal Architecture", "Principios SOLID", "Microservicios" ]
+      "items": [
+        "Clean Architecture",
+        "Screaming Architecture",
+        "Hexagonal Architecture",
+        "Principios SOLID",
+        "Microservicios"
+      ]
     },
     {
       "category": "Herramientas y Metodologías",
-      "items": [ "Git", "GitHub", "Scrum", "IA Generativa", "Agentes de IA", "OpenCode", "Claude Code" ]
+      "items": ["Git", "GitHub", "Scrum", "IA Generativa", "Agentes de IA", "OpenCode", "Claude Code"]
     },
     {
       "category": "Idiomas",
-      "items": [ "Español (Nativo)", "Inglés (B2)" ]
+      "items": ["Español (Nativo)", "Inglés (B2)"]
     }
   ]
 }

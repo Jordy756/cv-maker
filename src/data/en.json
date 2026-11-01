@@ -104,10 +104,10 @@
       "url": "https://verify.skilljar.com/c/fi8kduek4v34"
     },
     {
-      "name": "Desarrollo con IA: de 0 a Producción",
-      "issuer": "BIG school",
-      "date": "2026-03-14",
-      "url": "https://res.cloudinary.com/dd3hdnfqi/image/upload/v1773963091/Certificado-Yordi-Castro-Rojas_md7vg4.webp"
+      "name": "Building AI Agents with n8n",
+      "issuer": "LinkedIn Learning",
+      "date": "2026-03-10",
+      "url": "https://www.linkedin.com/learning/certificates/400042e01ae5214fc9c9698d009c7c7ae55f31297785670df979e779cd5158e6"
     },
     {
       "name": "Scrum Fundamentals Certified (SFC)",
@@ -125,27 +125,47 @@
   "skills": [
     {
       "category": "Frontend & Mobile",
-      "items": [ "React", "Angular", "Astro", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Responsive Design", "Design Systems", "Figma", "Flutter", "React Native" ]
+      "items": [
+        "React",
+        "Angular",
+        "Astro",
+        "TypeScript",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Responsive Design",
+        "Design Systems",
+        "Figma",
+        "Flutter",
+        "React Native"
+      ]
     },
     {
       "category": "Backend",
-      "items": [ ".NET", "Node.js", "Express", "Entity Framework", "Python", "Java", "RESTful APIs", "OAuth", "JWT" ]
+      "items": [".NET", "Node.js", "Express", "Entity Framework", "Python", "Java", "RESTful APIs", "OAuth", "JWT"]
     },
     {
       "category": "Databases",
-      "items": [ "SQL Server", "MySQL", "MongoDB" ]
+      "items": ["SQL Server", "MySQL", "MongoDB"]
     },
     {
       "category": "Architecture & Patterns",
-      "items": [ "Clean Architecture", "Screaming Architecture", "Hexagonal Architecture", "SOLID Principles", "Microservices" ]
+      "items": [
+        "Clean Architecture",
+        "Screaming Architecture",
+        "Hexagonal Architecture",
+        "SOLID Principles",
+        "Microservices"
+      ]
     },
     {
       "category": "Tools & Methodologies",
-      "items": [ "Git", "GitHub", "Scrum", "Generative AI", "AI Agents", "OpenCode", "Claude Code" ]
+      "items": ["Git", "GitHub", "Scrum", "Generative AI", "AI Agents", "OpenCode", "Claude Code"]
     },
     {
       "category": "Languages",
-      "items": [ "Spanish (Native)", "English (B2)" ]
+      "items": ["Spanish (Native)", "English (B2)"]
     }
   ]
 }

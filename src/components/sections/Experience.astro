@@ -23,9 +23,7 @@ const { experiences } = useResume(locale);
       </header>
       <ul class="flex flex-col ml-12">
         {highlights.map((highlight) => (
-          <li class="relative before:absolute before:top-0 before:-left-6 before:content-['\25CF']">
-            {highlight}
-          </li>
+          <li class="relative before:absolute before:top-0 before:-left-6 before:content-['\25CF']">{highlight}</li>
         ))}
       </ul>
     </article>
