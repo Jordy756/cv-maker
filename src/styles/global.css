@@ -3,6 +3,8 @@
 @theme {
   --font-sans: var(--font-primary);
   --font-mono: var(--font-primary);
+  /* --font-sans: "Times New Roman", "Georgia", "serif";
+  --font-mono: "Courier New", "Lucida Console", "monospace"; */
 }
 
 @layer base {
