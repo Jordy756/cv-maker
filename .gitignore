@@ -29,3 +29,6 @@ pnpm-debug.log*
 # Skill registry files
 .atl
 skills-lock.json
+
+# generated pdfs
+/pdf/
