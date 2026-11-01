@@ -2,27 +2,23 @@
 import { getCurrentLocale, useResume } from '@i18n/utils';
 
 const locale = getCurrentLocale(Astro.currentLocale);
-const { basics, summary } = useResume(locale);
+const { basics } = useResume(locale);
 
 const { name, location, portfolioLabel, portfolioUrl, phone, email } = basics;
 ---
 
-<header class="">
-  <div class="text-center border-b flex flex-col gap-1 px-2">
-    <h1 class="text-4xl">{name}</h1>
-    <p class="">
-      <span>{location}</span>
-      <span> · </span>
-      <a href={portfolioUrl} class="text-blue-700 underline" target="_blank" rel="noopener noreferrer">
-        {portfolioLabel}
-      </a>
-      <span>
-        {' '}
-        · {phone} · {email}
-      </span>
-    </p>
-  </div>
-  <article class="px-2 pt-2">
-    <p class="italic">{summary}</p>
-  </article>
+<header class="text-center w-9/12 mx-auto">
+  <h1>{name}</h1>
+  <hr class="my-1" />
+  <p>
+    <span>{location}</span>
+    <span> · </span>
+    <a href={portfolioUrl} class="text-blue-700 underline" target="_blank" rel="noopener noreferrer">
+      {portfolioLabel}
+    </a>
+    <span>
+      {' '}
+      · {email} · {phone}
+    </span>
+  </p>
 </header>

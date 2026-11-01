@@ -17,9 +17,9 @@ const { basics, summary } = useResume(locale);
 
 <Layout title={interpolate(t('meta.title'), { name: basics.name })} description={summary}>
   <Header />
-  <main class="flex flex-col gap-4">
-    <Experience />
+  <main class="flex flex-col gap-2">
     <Education />
+    <Experience />
     <Skills />
   </main>
 </Layout>

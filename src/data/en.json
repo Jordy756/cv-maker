@@ -5,7 +5,7 @@
   "pdfFileName": "Yordi_Castro_CV_EN.pdf",
   "labels": {
     "summary": "Professional summary",
-    "experience": "Professional experience",
+    "experience": "Experience",
     "education": "Education",
     "skills": "Technical skills",
     "present": "Present"
@@ -76,13 +76,6 @@
       "location": "Turrialba, CR",
       "startDate": "2020-03-01",
       "endDate": "2026-02-01"
-    },
-    {
-      "institution": "Alura Latam + Oracle",
-      "area": "Oracle Next Education",
-      "location": "Online",
-      "startDate": "2023-04-01",
-      "endDate": "2024-02-01"
     }
   ],
   "skills": [

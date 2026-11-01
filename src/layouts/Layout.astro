@@ -55,16 +55,16 @@ const alternateUrl = (locale: string) => new URL(getRelativeLocaleUrl(locale), A
     <meta name="twitter:description" content={interpolate(t('meta.description'), { name })} />
     <meta name="twitter:image" content={ogImage} />
   </head>
-  <body class="font-sans text-pretty text-sm bg-neutral-800 print:bg-white">
-    <div class="p-8 w-204 mx-auto min-h-dvh print:min-h-0 flex flex-col gap-4 bg-white text-black">
+  <body class="font-sans text-pretty text-xs bg-neutral-800 print:bg-white">
+    <div class="p-8 w-204 mx-auto min-h-dvh print:min-h-0 flex flex-col gap-2 bg-white text-black">
       <slot />
     </div>
   </body>
 </html>
-
+<!-- 
 <style is:global>
   @page {
     size: 8.5in 14in;
     margin: 0;
   }
-</style>
+</style> -->

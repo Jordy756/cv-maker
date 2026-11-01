@@ -10,18 +10,18 @@ const { experiences } = useResume(locale);
 
 <Section title={t('experience.title')}>
   {experiences.map(({ organization, role, location, startDate, endDate, highlights }) => (
-    <article class="px-2 flex flex-col gap-2">
+    <article class="px-2 flex flex-col gap-1">
       <header class="flex items-start gap-4 justify-between">
         <div class="flex flex-col">
-          <h3 class="font-bold">{organization}</h3>
-          <h4 class="font-normal">{role}</h4>
+          <h3>{organization}</h3>
+          <h4>{role}</h4>
         </div>
         <div class="flex flex-col items-end">
-          <span class="font-bold whitespace-nowrap">{location}</span>
+          <span class="whitespace-nowrap">{location}</span>
           <span class="italic whitespace-nowrap">{formatRange(startDate, endDate, locale, t('labels.present'))}</span>
         </div>
       </header>
-      <ul class="flex flex-col gap-0.5 ml-12">
+      <ul class="flex flex-col ml-12">
         {highlights.map((highlight) => (
           <li class="relative before:absolute before:top-1 before:-left-6 before:content-['\25CF'] before:text-[10px] before:leading-none">
             {highlight}
