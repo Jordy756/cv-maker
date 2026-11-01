@@ -4,23 +4,12 @@ description: Audit and improve web accessibility following WCAG 2.2 guidelines. 
 license: MIT
 metadata:
   author: web-quality-skills
-  version: '2.0'
+  version: '1.1'
 ---
 
 # Accessibility (a11y)
 
 Comprehensive accessibility guidelines based on WCAG 2.2 and Lighthouse accessibility audits. Goal: make content usable by everyone, including people with disabilities.
-
-## Evidence-led audit workflow
-
-When a rendered page is available:
-
-1. Run a live Lighthouse Accessibility audit when that capability is available; with Chrome DevTools MCP, use `lighthouse_audit`. Use mobile navigation mode for a general public page or snapshot mode when reloading would lose authenticated or user-created state.
-2. Use failed audit nodes to localize the relevant component or template instead of searching the whole repository for generic patterns.
-3. Inspect a rendered accessibility-tree snapshot for names, roles, states, landmarks, and heading structure; with Chrome DevTools MCP, use `take_snapshot`. Exercise the affected flow with the keyboard.
-4. Fix the source, then re-run the same audit and manual interaction.
-
-If the live tools are unavailable, use Lighthouse CLI or axe for automated coverage and complete the same manual checks. Automated tools detect only a subset of accessibility barriers: a score of 100 is not WCAG conformance, and a low score does not replace issue-level evidence.
 
 ## WCAG Principles: POUR
 
@@ -123,9 +112,9 @@ If the live tools are unavailable, use Lighthouse CLI or axe for automated cover
   background: #fff;
 }
 
-/* ✅ Focus states need contrast too (3:1 against background, WCAG 1.4.11) */
+/* ✅ Focus states need contrast too */
 :focus-visible {
-  outline: 2px solid currentColor;
+  outline: 2px solid #005fcc;
   outline-offset: 2px;
 }
 ```
@@ -177,22 +166,13 @@ If the live tools are unavailable, use Lighthouse CLI or axe for automated cover
 
 ### Keyboard accessible (2.1)
 
-**All functionality must be keyboard accessible.** Prefer native interactive elements — `<button>`, `<a href>`, and form controls handle Enter/Space activation, focus, and assistive-tech semantics for free. Only add manual keyboard handling when you cannot use a native element.
-
-```html
-<!-- ❌ Non-interactive element with click only: not focusable, no keyboard activation -->
-<div class="card" onclick="handleAction()">Open</div>
-
-<!-- ✅ Best: use a native button -->
-<button type="button" onclick="handleAction()">Open</button>
-```
+**All functionality must be keyboard accessible:**
 
 ```javascript
-// ✅ When you MUST use a non-interactive element (e.g. div with role="button"),
-// make it focusable AND handle keyboard activation. Do NOT add this to a native
-// <button> — Enter/Space already fire click, so you'd double-trigger.
-element.setAttribute('role', 'button');
-element.setAttribute('tabindex', '0');
+// ❌ Only handles click
+element.addEventListener('click', handleAction);
+
+// ✅ Handles both click and keyboard
 element.addEventListener('click', handleAction);
 element.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' || e.key === ' ') {
@@ -218,11 +198,11 @@ element.addEventListener('keydown', (e) => {
 }
 
 :focus-visible {
-  outline: 2px solid currentColor; /* inherits text color → already contrast-checked */
+  outline: 2px solid #005fcc;
   outline-offset: 2px;
 }
 
-/* ✅ Or pick a brand color and verify ≥3:1 contrast against every background it lands on */
+/* ✅ Or custom focus styles */
 button:focus-visible {
   box-shadow: 0 0 0 3px rgba(0, 95, 204, 0.5);
 }
@@ -418,8 +398,6 @@ Use `aria-live` regions to announce dynamic content changes without moving focus
 ## Testing checklist
 
 ### Automated testing
-
-Prefer a live Lighthouse audit that returns failing rendered nodes directly to the agent. With Chrome DevTools MCP, this is `lighthouse_audit`. Otherwise:
 
 ```bash
 # Lighthouse accessibility audit
