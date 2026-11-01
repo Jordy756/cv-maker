@@ -10,7 +10,7 @@ const { skills } = useResume(locale);
 <Section title={t('skills.title')}>
   <ul class="flex flex-col gap-0.5 ml-12">
     {skills.map(({ category, items }) => (
-      <li class="relative before:absolute before:top-2 before:rounded-full before:-left-6 before:size-1.5 before:bg-black">
+      <li class="relative before:absolute before:top-1 before:-left-6 before:content-['\25CF'] before:text-[10px] before:leading-none">
         <span class="font-bold">{category}:</span> {items.join(', ')}.
       </li>
     ))}
